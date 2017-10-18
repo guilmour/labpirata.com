@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html style="height:100%">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LabPirata - Laboratório Hacker Colaborativo, Makerspace, Creativespace, Hacklab</title>
+
+  <!-- Helpers CSS Framework http://helpers.araujo.cc -->
+  <link rel="stylesheet" href="helpers.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  @font-face {
+    font-family: 'OctaW01';
+    src: url('fonts/OctaW01-Regular/OctaW01-Regular.eot');
+    src: url('fonts/OctaW01-Regular/OctaW01-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OctaW01-Regular/OctaW01-Regular.woff') format('woff'),
+    url('fonts/OctaW01-Regular/OctaW01-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body { background: url(img/bg.png) repeat-x center top -15px; }
+  section { padding: 50px 0 90px }
+  hr {width: 120px; margin: 0 auto; border:0; border-top: 1px solid rgba(255, 255, 255, .3); margin-bottom:60px }
+  h1, h2 { font-family: 'OctaW01'; font-weight: 300 }
+  h1 { font-size: 2em; margin:0; line-height:1 }
+  h2 { font-size: 2.2em; margin:30px 0 10px }
+  h3 { font-size: 1.4em }
+  body > header { padding: 30px 0 120px   }
+  header h2 { font-size: 3.3em; margin:80px 0 20px }
+  header menu {margin-left:-10px}
+  header menu a { text-decoration: none; display: inline-block; padding:15px; color:#444}
+  header menu a:hover { text-decoration: underline}
+  [text~=purple] { color: #77478b }
+  [layout~=purple] { background: linear-gradient(#8c74b6, #532f91) }
+  .bg { background: #77478b }
+  .bolas div { width:120px; height:120px; display:inline-block; padding-top:25px }
+  .bolas div span { font-size: .7em }
+  .vai-que-vai { margin:10px -10px 0; opacity:.3; transform: rotate(20deg) }
+  .videoWrapper {width:100%; position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0}
+  .videoWrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100% }
+  </style>
+</head>
+<body text="Ubuntu line-1.5 black" layout="border-sizing-all no-margin responsive-images">
+
+  <header text="purple" layout="top-40 max-1200 center fix">
+    <div text="center" cols="2">
+      <img src="labpirata.png" width="100" alt="">
+      <h1 layout="no-margin">
+        <span text="black">#</span>LabPirata
+      </h1>
+    </div>
+    <div cols="10" style="padding-left: 100px">
+      <menu layout="no-padding">
+        <a href="#comofunfa">como funfa?</a>
+        <a href="#projetos">projetos</a>
+        <a href="#piratas">piratas</a>
+        <a href="#hacklab">hacklab</a>
+        <!-- <a href="#contato">contato</a> -->
+      </menu>
+      <h2 text="Ubuntu line-1.25 bold">
+        <span text="gray-90 1.2em">Tecnologias para a</span> <br>
+        inovação e sustentabilidade
+      </h2>
+      <p text="gray-90">
+        <strong>LabPirata</strong> é uma incubadora de projetos tecnológicos que desenvolve inovação <br>
+        para pessoas e coletivos com o uso de software livre.
+      </p>
+    </div>
+  </header>
+
+  <section id="comofunfa" class="bg" text="white center" layout="fix">
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/AnxuFAghl-k" frameborder="0" allowfullscreen></iframe> -->
+    <div text="center" layout="max-1200 center bottom-30">
+      <h2>Como Funfa?</h2>
+      <hr>
+      <h3 text="normal" layout="bottom-40">Transforme suas ideias e gambiarras num projeto supimpa!!</h3>
+      <div class="bolas" layout="flex items-center justify-center">
+        <div layout="circle black-30">
+          <i class="fa fa-lightbulb-o fa-3x"></i> <br>
+          <span>IDEIA</span>
+        </div>
+        <div class="vai-que-vai">
+          <i class="fa fa-mail-forward fa-3x"></i>
+        </div>
+        <div layout="circle black-30">
+          <i class="fa fa-clipboard fa-3x"></i> <br>
+          <span>DESIGN</span>
+        </div>
+        <div class="vai-que-vai">
+          <i class="fa fa-mail-forward fa-3x"></i>
+        </div>
+        <div layout="circle black-30">
+          <i class="fa fa-code fa-3x"></i> <br>
+          <span>CODIFICAÇÂO</span>
+        </div>
+        <div class="vai-que-vai">
+          <i class="fa fa-mail-forward fa-3x"></i>
+        </div>
+        <div layout="circle black-30">
+          <i class="fa fa-github-alt fa-3x"></i> <br>
+          <span>PUBLICAÇÃO</span>
+        </div>
+      </div>
+      <p layout="top-40">
+        Entre em contato, envie-nos sua ideia para nós. <br>
+        Vamos bater um papo!
+      </p>
+    </div>
+  </section>
+
+  <section id="projetos" text="white center" layout="gray-90 fix" links="white no-decoration">
+    <div text="center" layout="max-1200 center bottom-30">
+      <h2>Projetos:</h2>
+      <hr>
+      <h3 text="normal" layout="bottom-40">Alguns dos projetos que já realizamos:</h3>
+      <div text="center" layout="flex items-center justify-center">
+        <div>
+          <a href="http://comidalivre.org" target="_blank">
+            <img src="/img/comidalivre-mapa-350x250.png" alt=""> <br>
+            ComidaLivre.org
+          </a>
+        </div>
+        <div>&nbsp;</div>
+        <div>
+          <a href="http://libreflix.org" target="_blank">
+            <img src="/img/libreflix-350x250.png" alt=""> <br>
+            LibreFlix.org
+          </a>
+        </div>
+        <div>&nbsp;</div>
+        <div>
+          <a href="http://mom.labpirata.com" target="_blank">
+            <img src="/img/comidalivre-mapa-350x250.png" alt="">  <br>
+            Conversor de Texto MOM
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="piratas" text="gray-90 center" layout="fix" links="no-decoration gray-90 hover-gray-70">
+    <div layout="max-1200 center bottom-30">
+      <h2>Piratas:</h2>
+      <hr style="border-color:rgba(0, 0, 0, .3)">
+      <h3 text="normal" layout="bottom-40">Subam na embarcação marujos! Este navio está para partir.</h3>
+      <div text="center" layout="flex items-center justify-center">
+        <div layout="inline-block right-40">
+          <a href="http://araujo.cc" target="_blank" layout="flex items-center">
+            <img src="https://s.gravatar.com/avatar/07bd636cfc335ed96458d73bc014212a?s=80&r=g" alt="Arthur Araújo" layout="few-rounded">
+            <span text="left" layout="left-10">
+              <strong>Arthur Araújo</strong> <br>
+              Desenvolvedor Web
+            </span>
+          </a>
+        </div>
+        <div layout="inline-block right-40">
+          <a href="http://guilmour.org/" target="_blank" layout="flex items-center">
+            <img src="https://s.gravatar.com/avatar/df354948385c9e431161d4f3196bd099?s=80&r=g" alt="Guilmour Rossi" layout="few-rounded">
+            <span text="left" layout="left-10">
+              <strong>Guilmour Rossi</strong> <br>
+              Desenvolvedor Web
+            </span>
+          </a>
+        </div>
+        <div layout="inline-block right-40">
+          <a href="http://araujo.cc" target="_blank" layout="flex items-center">
+            <img src="https://www.facebook.com/ErickSoaresFigueiredo" alt="Erick Soares" layout="few-rounded">
+            <span text="left" layout="left-10">
+              <strong>Erick Soares</strong> <br>
+              Estudante
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hacklab" class="bg" text="white center" layout="fix">
+    <div layout="max-1200 center">
+      <div cols="5">
+        <div layout="top-40" class="videoWrapper">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/AnxuFAghl-k" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div cols="7" text="left" layout="max-1200 center bottom-30" style="padding-left:60px">
+        <h2>HackLab + Experimentação livre</h2>
+        <p>
+          O <strong>LabPirata</strong> oferece o seu espaço para o aprendizado e experimentação disponibilizando ferramentas com auxílio de nossa experiência. Venha conhecer nosso espaço!
+        </p>
+        <h2>Incubadora de Projetos</h2>
+        <p>
+          Tem uma ideia ou um pequeno projeto já em curso e precisa de ajuda? A gente dá uma força! Seja sua ideia um site, sistema, aplicativo pra celular, ideia de negócio, dispositivo inovador ou até mesmo um incrível robô!!! Podemos criar pra você, indicar pessoas, financiar seu projeto ou até mesmo nos tornar parceiros nesta caminhada.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section text="center" layout="opacity-60">
+    <!-- <img src="img/creative-commons.png" alt=""> -->
+    <img layout="top-30" src="img/creative-commons.svg" alt="Creative Commons">
+    <h2 text="1.8em line-1.25" layout="top-10">
+      Pode copiar a vontade. <br>
+      Mas lembre-se de citar o autor!
+    </h2>
+  </section>
+
+  <footer text="white .9em line-1.75" layout="gray-80 v-padding-40 fix" links="no-decoration gray-20 hover-orange">
+    <div layout="max-960 center">
+      <div cols="3">
+        <a href="http://labpirata.com" target="_blank">
+          <img src="/labpirata-footer.png" alt="">
+          <br>
+          <span text="gray-20">
+            O LabPirata é uma incubadora de <br>
+            projetos tecnológicos que desenvolve <br>
+            inovação para pessoas e coletivos.
+          </span>
+        </a>
+      </div>
+      <div cols="3" layout="top-10" style="padding-left:50px">
+        <b layout="inline-block bottom-10">Mapa do site</b> <br>
+        <a href="#comofunfa">Como Funfa?</a> <br>
+        <a href="#projetos">Projetos</a> <br>
+        <a href="#piratas">Piratas</a>
+        <a href="#hacklab">Hacklab</a>
+      </div>
+      <div cols="3" layout="top-10">
+        <b layout="inline-block bottom-10">Projetos</b> <br>
+        <a href="https://comidalivre.org" target="_blank">ComidaLivre.org</a> <br>
+        <a href="https://libreflix.org/" target="_blank">LibreFlix.org</a> <br>
+        <a href="https://helpers.araujo.cc" target="_blank">Helpers CSS Framework</a> <br>
+        <a href="https://mom.labpirata.com" target="_blank">Tradutor MOM</a> <br>
+      </div>
+      <div cols="3">
+        <a layout="inline-block top-10" href="https://www.facebook.com/LabPiratas" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+        &nbsp; &nbsp;
+        <a href="https://www.youtube.com/channel/UCU6m4HnIoBo77XppAINqZ4g" target="_blank"><i class="fa fa-youtube-play fa-2x"></i></a>
+        &nbsp; &nbsp;
+        <a href="https://www.instagram.com/labpiratas/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+        &nbsp; &nbsp;
+        <a href="https://github.com/labpiratas" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        <p text=".7em">
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">
+            CC BY <i class="fa fa-creative-commons"></i> ALGUNS DIREITOS RESERVADOS <br>
+            (pode copiar o conteúdo desde que cite o autor)
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  // smooth scrollTo
+  document.querySelectorAll('a[href*="#"]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      try {
+        e.preventDefault()
+        console.log();
+        console.log(document.querySelector(this.getAttribute('href')));
+        console.log(document.querySelector(this.getAttribute('href')).offsetTop);
+        window.scroll({
+          top: document.querySelector(this.getAttribute('href')).offsetTop,
+          left: 0,
+          behavior: 'smooth'
+        })
+        return false
+      } catch (e) {
+        console.log(e)
+        return true
+      }
+    })
+  })
+  </script>
+</body>
+</html>
